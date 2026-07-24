@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Email Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>AI Email Generator</h1>
+
+<form action="/generate" method="POST">
+
+<textarea
+name="prompt"
+rows="10"
+cols="60"
+placeholder="Describe your email">
+</textarea>
+
+<br><br>
+
+<button type="submit">
+Generate Email
+</button>
+
+</form>
+
+</body>
+</html>
